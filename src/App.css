@@ -1,3 +1,33 @@
 body {
-  background-color: rgb(229, 223, 218);
+  margin: 0;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.header {
+  background: rgb(173, 173, 173);
+  background: linear-gradient(
+    27deg,
+    rgb(173, 173, 173) 20%,
+    rgb(103, 131, 110) 99%
+  );
+}
+
+.hero-a {
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 60px;
+}
+.hero-b {
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
 }
