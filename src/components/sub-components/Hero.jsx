@@ -50,6 +50,7 @@ export const Hero = () => {
             paddingRight: "20px",
             fontWeight: 300,
           }}
+          href="/gallery"
         >
           Gallery
         </Button>

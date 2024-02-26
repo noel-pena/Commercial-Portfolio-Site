@@ -39,7 +39,7 @@ export const Header = () => {
             variant="h7"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               display: { xs: "none", md: "flex" },
               fontFamily: "serif",
@@ -105,7 +105,7 @@ export const Header = () => {
             variant="h7"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
