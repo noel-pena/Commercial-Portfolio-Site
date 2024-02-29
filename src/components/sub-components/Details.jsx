@@ -15,15 +15,16 @@ export const Details = () => {
           p={5}
           flexDirection="column"
           alignItems="center"
-          className="details"
         >
-          <HandymanIcon sx={{ fontSize: "80px" }} />
-          <span>Over 1,000 jobs completed</span>
-          <span style={{ color: "rgb(103, 131, 110)", fontWeight: 400 }}>
+          <HandymanIcon sx={{ fontSize: "80px", color: "white" }} />
+          <span className="details">Over 1,000 jobs completed</span>{" "}
+          <span
+            className="details"
+            style={{ color: "rgb(103, 131, 110)", fontWeight: 400 }}
+          >
             Proven history of business
-          </span>
+          </span>{" "}
         </Grid>
-
         <Grid
           container
           item
@@ -32,11 +33,13 @@ export const Details = () => {
           p={5}
           flexDirection="column"
           alignItems="center"
-          className="details"
         >
-          <EmojiEventsIcon sx={{ fontSize: "80px" }} />
-          <span>High Quality</span>
-          <span style={{ color: "rgb(103, 131, 110)", fontWeight: 400 }}>
+          <EmojiEventsIcon sx={{ fontSize: "80px", color: "white" }} />{" "}
+          <span className="details">High Quality</span>{" "}
+          <span
+            className="details"
+            style={{ color: "rgb(103, 131, 110)", fontWeight: 400 }}
+          >
             View our{" "}
             <a style={{ color: "rgb(197, 166, 115)" }} href="/gallery">
               gallery
@@ -51,13 +54,18 @@ export const Details = () => {
           p={5}
           flexDirection="column"
           alignItems="center"
-          className="details"
         >
-          <EditNoteIcon sx={{ fontSize: "80px", paddingLeft: "10px" }} />
-          <span>Fast Quote</span>
-          <span style={{ color: "rgb(103, 131, 110)", fontWeight: 400 }}>
+          {" "}
+          <EditNoteIcon
+            sx={{ fontSize: "80px", paddingLeft: "10px", color: "white" }}
+          />{" "}
+          <span className="details">Fast Quote</span>{" "}
+          <span
+            className="details"
+            style={{ color: "rgb(103, 131, 110)", fontWeight: 400 }}
+          >
             One call away we can provide easy consultation
-          </span>
+          </span>{" "}
         </Grid>
       </Grid>
     </>

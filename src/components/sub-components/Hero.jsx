@@ -1,23 +1,49 @@
 import { Button, Grid } from "@mui/material";
+import { SetModal } from "./SetModal";
 
 export const Hero = () => {
   return (
     <Grid
       container
-      flexDirection="column"
+      pt={40}
+      pb={40}
       sx={{
         backgroundImage: "url(/img/bathroom.jpg)",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
-        minHeight: "70vh",
+        minHeight: "100%",
         maxWidth: "100%",
       }}
     >
-      <Grid item className="hero-a" xs={12} textAlign="left" pt={25} pl={4}>
-        Tiling Done Right
+      <Grid
+        container
+        item
+        className="hero-a"
+        xs={12}
+        textAlign="left"
+        pl={6}
+        pb={1}
+        sx={{
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        We Do Tiling Right
       </Grid>
-      <Grid item className="hero-b" xs={12} textAlign="left" pt={2} pl={5}>
+      <Grid
+        container
+        item
+        className="hero-b"
+        xs={12}
+        textAlign="left"
+        pl={7}
+        pb={3}
+        sx={{
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
         Let us tile your world with style
       </Grid>
       <Grid
@@ -25,29 +51,22 @@ export const Hero = () => {
         item
         flexDirection="row"
         className="hero-b"
-        xs={12}
+        xs={6}
         textAlign="left"
-        pt={3}
-        pl={5}
+        pl={7}
         gap={2}
       >
+        <SetModal className="hero-b">Contact</SetModal>
         <Button
+          className="hero-b"
           sx={{
             color: "black",
             backgroundColor: "white",
             paddingLeft: "20px",
             paddingRight: "20px",
-            fontWeight: 300,
-          }}
-        >
-          Contact
-        </Button>
-        <Button
-          sx={{
-            color: "black",
-            backgroundColor: "white",
-            paddingLeft: "20px",
-            paddingRight: "20px",
+            height: "fit-content",
+            width: "fit-content",
+            fontSize: "20px",
             fontWeight: 300,
           }}
           href="/gallery"
@@ -58,3 +77,5 @@ export const Hero = () => {
     </Grid>
   );
 };
+
+export default Hero;
