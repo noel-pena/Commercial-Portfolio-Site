@@ -1,9 +1,9 @@
-import React, { useRef, useState } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 
-export const ContactUs = () => {
+export const ContactForm = () => {
   const form = useRef();
   function sendEmail(e) {
     e.preventDefault();
@@ -22,46 +22,50 @@ export const ContactUs = () => {
         },
         (error) => {
           console.log(error.text);
-          setinputValue("");
         }
       );
     alert("Email sent.");
   }
 
   return (
-    <Grid container xs={12} sx={{ pb: -5 }} className="form-container">
+    <>
+      <Typography sx={{ pb: 4 }}>
+        Send us an email or you can call us.
+      </Typography>
       <form ref={form} onSubmit={sendEmail}>
-        <Grid item s={6} sx={{ mt: 10, p: 2 }}>
+        <Grid container item pb={3} xs={12}>
           <input
-            className="form form-item"
+            className="form"
             type="text"
             name="user_name"
-            placeholder="Name"
+            placeholder="* Name"
             required
+            style={{ width: "100%" }}
           />
         </Grid>
-        <Grid item xs={12} sx={{ p: 2 }}>
+        <Grid container item pb={3} xs={12}>
           <input
-            className="form form-item"
-            sx={{ width: 1 }}
+            className="form"
             type="email"
             name="user_email"
-            placeholder="Email"
+            placeholder="* Email"
             required
+            style={{ width: "100%" }}
           />
         </Grid>
-        <Grid item xs={12} sx={{ p: 2 }}>
+        <Grid container item pb={3} xs={12}>
           <textarea
-            sx={{ width: 1 }}
             className="form"
             name="message"
-            placeholder="Message"
-            rows={9}
+            placeholder="* Message"
+            rows={10}
             required
+            style={{ width: "100%" }}
           />
         </Grid>
-        <Grid item xs={12} sx={{ pb: 3 }}>
+        <Grid container item xs={12} sx={{ pb: 2 }}>
           <Button
+            className="form"
             sx={{ backgroundColor: "#5a5a5a" }}
             type="submit"
             value="Send"
@@ -69,8 +73,18 @@ export const ContactUs = () => {
           >
             Send
           </Button>
+          <Button
+            className="form"
+            sx={{ backgroundColor: "#5a5a5a", marginLeft: "20px" }}
+            type="submit"
+            value="Send"
+            variant="contained"
+            href="tel:+4074892189"
+          >
+            Call
+          </Button>
         </Grid>
       </form>
-    </Grid>
+    </>
   );
 };

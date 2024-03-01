@@ -26,7 +26,7 @@ export const Header = () => {
 
   return (
     <AppBar position="static" className="header">
-      <Container>
+      <Container maxWidth="xl">
         <Toolbar disableGutters>
           <VerticalSplitIcon
             sx={{
@@ -141,7 +141,7 @@ export const Header = () => {
                   my: 2,
                   color: "white",
                   display: "block",
-                  fontWeight: "200",
+                  fontWeight: 300,
                   "&:hover": {
                     textDecoration: "underline",
                     text: "#64485C",

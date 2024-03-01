@@ -1,12 +1,12 @@
-import { Button, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import { SetModal } from "./SetModal";
 
 export const Hero = () => {
   return (
     <Grid
       container
-      pt={40}
-      pb={40}
+      pt={30}
+      pb={35}
       sx={{
         backgroundImage: "url(/img/bathroom.jpg)",
         backgroundRepeat: "no-repeat",
@@ -50,32 +50,17 @@ export const Hero = () => {
         container
         item
         flexDirection="row"
-        className="hero-b"
-        xs={6}
+        xs={12}
         textAlign="left"
+        pt={1}
         pl={7}
         gap={2}
       >
         <SetModal className="hero-b">Contact</SetModal>
-        <Button
-          className="hero-b"
-          sx={{
-            color: "black",
-            backgroundColor: "white",
-            paddingLeft: "20px",
-            paddingRight: "20px",
-            height: "fit-content",
-            width: "fit-content",
-            fontSize: "20px",
-            fontWeight: 300,
-          }}
-          href="/gallery"
-        >
-          Gallery
-        </Button>
+        <a href="/gallery">
+          <button className="button">Gallery</button>
+        </a>
       </Grid>
     </Grid>
   );
 };
-
-export default Hero;

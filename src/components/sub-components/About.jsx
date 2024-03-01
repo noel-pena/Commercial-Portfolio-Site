@@ -18,15 +18,7 @@ export const About = () => {
           <hr
             style={{ borderColor: "gray", width: "25%", marginTop: "25px" }}
           />
-          <span
-            style={{
-              fontWeight: 400,
-              fontSize: "24px",
-              lineHeight: 1.5,
-              paddingTop: "20px",
-              paddingBottom: "50px",
-            }}
-          >
+          <span className="about">
             At JBC Professional LLC., we are your trusted partner for all your
             tile flooring needs. With many years of experience, we have
             established ourselves as a leading residential and commercial

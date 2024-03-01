@@ -8,21 +8,57 @@ body {
 }
 
 .header {
-  background: rgb(173, 173, 173);
   background: linear-gradient(
-    27deg,
-    rgb(173, 173, 173) 20%,
+    10deg,
+    rgb(77, 69, 57) 20%,
     rgb(103, 131, 110) 99%
   );
+}
+
+.button {
+  display: inline-block;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.256);
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 0px;
+  border-radius: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  height: fit-content;
+  width: fit-content;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  transition: background-color 0.5s ease !important;
+  transition: box-shadow 0.5s ease !important;
+}
+
+.button:hover {
+  background-color: rgba(255, 200, 132, 0.538) !important;
+  box-shadow: 10px 10px 20px #ffffff3f, -10px -10px 20px rgba(67, 67, 67, 0.332);
+}
+
+@media (max-width: 768px) {
+  .button {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    font-size: 20px;
+  }
 }
 
 .hero-a {
   color: white;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
-  font-size: 90px;
+  font-size: 70px;
 }
 .hero-b {
   color: white;
@@ -30,42 +66,70 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 40px;
+  font-size: 30px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .hero-a {
     font-size: 60px;
+    padding-right: 10px;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 480px) {
   .hero-a {
-    font-size: 70px;
+    font-size: 40px;
+    padding-right: 20px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .hero-b {
-    font-size: 30px;
+    font-size: 25px;
+    padding-right: 10px;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 480px) {
   .hero-b {
     font-size: 20px;
+    padding-right: 10px;
   }
 }
 
 .details {
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
   font-weight: 600;
 }
 
 @media (max-width: 500px) {
   .details {
-    font-size: 30px;
+    font-size: 25px;
   }
+}
+
+.about {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 500px) {
+  .about {
+    font-size: 15px;
+  }
+}
+
+.form {
+  background-color: rgb(233, 233, 233);
+  color: black;
+  border: 0px;
+  border-radius: 5px;
+  position: relative;
+  top: -50%;
+  padding: 10px;
 }
