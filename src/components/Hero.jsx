@@ -1,5 +1,5 @@
 import { Grid } from "@mui/material";
-import { SetModal } from "./SetModal";
+import { SetModal } from "./sub-components/SetModal";
 
 export const Hero = () => {
   return (
@@ -37,14 +37,14 @@ export const Hero = () => {
         className="hero-b"
         xs={12}
         textAlign="left"
-        pl={7}
-        pb={3}
+        pl={6}
+        pb={2}
         sx={{
           display: "flex",
           alignItems: "center",
         }}
       >
-        Let us tile your world with style
+        Let JBC Professional tile your world with style
       </Grid>
       <Grid
         container
@@ -53,7 +53,7 @@ export const Hero = () => {
         xs={12}
         textAlign="left"
         pt={1}
-        pl={7}
+        pl={6}
         gap={2}
       >
         <SetModal className="hero-b">Contact</SetModal>

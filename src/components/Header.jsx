@@ -1,158 +1,99 @@
-import * as React from "react";
+import { Link } from "react-scroll";
 import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
 import VerticalSplitIcon from "@mui/icons-material/VerticalSplit";
 
-const pages = ["Services", "Gallery", "About"];
-
 export const Header = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
   return (
     <AppBar position="static" className="header">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <VerticalSplitIcon
-            sx={{
-              display: { xs: "none", md: "flex" },
-              mr: 1,
-              color: "rgb(103, 131, 110)",
-            }}
-          />
-          <Typography
-            variant="h7"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              display: { xs: "none", md: "flex" },
-              fontFamily: "serif",
-              fontWeight: 800,
-              letterSpacing: ".1rem",
-              color: "inherit",
-              textDecoration: "none",
-              "&:hover": {
-                textDecoration: "underline",
-                textDecorationColor: "#64485C",
-                transition: "text-decoration-color 0.3s ease",
-              },
-            }}
-          >
-            JBC Professional LLC
-            <span style={{ color: "rgb(103, 131, 110)" }}>.</span>
-          </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+          <a href="/">
+            <VerticalSplitIcon
               sx={{
-                display: { xs: "block", md: "none" },
+                display: { md: "flex" },
+                mr: 1,
+                color: "rgb(103, 131, 110, 0.7)",
               }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-          <VerticalSplitIcon
-            sx={{
-              display: { xs: "flex", md: "none" },
-              mr: 1,
-              color: "rgb(103, 131, 110)",
-            }}
-          />
-          <Typography
-            variant="h7"
-            noWrap
-            component="a"
+            />
+          </a>
+          <a
             href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".1rem",
-              color: "inherit",
+            style={{
               textDecoration: "none",
-              "&:hover": {
-                textDecoration: "underline",
-                textDecorationColor: "#64485C",
-                transition: "text-decoration-color 0.3s ease",
-              },
+              textDecorationColor: "none",
+              color: "white",
             }}
           >
-            JBC Professional LLC
-            <span style={{ color: "rgb(103, 131, 110)" }}>.</span>
-          </Typography>
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-              justifyContent: "flex-end",
-              gap: "10px",
-            }}
-          >
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
+            <Typography
+              sx={{
+                display: { xs: "none", md: "flex" },
+              }}
+              variant="h7"
+              noWrap
+            >
+              JBC Professional LLC
+              <span
+                style={{
+                  fontFamily: "serif",
+                  fontWeight: 800,
+                  letterSpacing: ".1rem",
                   color: "white",
-                  display: "block",
-                  fontWeight: 300,
+                  textDecoration: "none",
                   "&:hover": {
                     textDecoration: "underline",
-                    text: "#64485C",
+                    textDecorationColor: "#64485C",
                     transition: "text-decoration-color 0.3s ease",
                   },
                 }}
               >
-                {page}
-              </Button>
-            ))}
-          </Box>
+                .
+              </span>
+            </Typography>
+          </a>
+          <div style={{ marginLeft: "auto" }}>
+            <Link
+              className="nav-items"
+              style={{
+                textDecoration: "none",
+                color: "white",
+                fontWeight: 300,
+              }}
+              to="services-section"
+              smooth={true}
+              duration={500}
+            >
+              Services
+            </Link>
+            <Link
+              className="nav-items"
+              style={{
+                paddingLeft: "20px",
+                textDecoration: "none",
+                color: "white",
+                fontWeight: 300,
+              }}
+              to="about-section"
+              smooth={true}
+              duration={500}
+            >
+              About
+            </Link>
+            <a
+              href="/gallery"
+              className="nav-items"
+              style={{
+                paddingLeft: "20px",
+                textDecoration: "none",
+                color: "white",
+                fontWeight: 300,
+              }}
+            >
+              Gallery
+            </a>
+          </div>
         </Toolbar>
       </Container>
     </AppBar>

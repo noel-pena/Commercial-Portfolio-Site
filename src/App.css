@@ -48,7 +48,7 @@ body {
 
 @media (max-width: 480px) {
   .button {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -92,7 +92,7 @@ body {
 
 @media (max-width: 480px) {
   .hero-b {
-    font-size: 20px;
+    font-size: 16px;
     padding-right: 10px;
   }
 }
@@ -132,4 +132,34 @@ body {
   position: relative;
   top: -50%;
   padding: 10px;
+}
+
+.skill-container {
+  border-radius: 5px;
+  background: #252525;
+  box-shadow: 31px 31px 61px #171717, -31px -31px 61px #33333331;
+  border: rgba(255, 255, 255, 0.061);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.nav-items {
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  transition: background-color 0.5s ease !important;
+  transition: text-shadow 0.5s ease !important;
+  border-radius: 10px;
+}
+
+.nav-items:hover {
+  text-shadow: 0 0 30px #ffffffde;
+}
+
+.footer {
+  font-size: 14px;
+}
+@media (max-width: 500px) {
+  .footer {
+    font-size: 8px;
+  }
 }

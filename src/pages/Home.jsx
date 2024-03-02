@@ -1,9 +1,10 @@
 import { Header } from "../components/Header";
-import { Hero } from "../components/sub-components/Hero";
-import { Details } from "../components/sub-components/Details";
-import { About } from "../components/sub-components/About";
+import { Hero } from "../components/Hero";
+import { Details } from "../components/Details";
+import { About } from "../components/About";
 import { Photos } from "../components/sub-components/Photos";
-// import { Footer } from "../components/Footer";
+import { Services } from "../components/Services";
+import { Footer } from "../components/Footer";
 
 export const Home = () => {
   return (
@@ -11,8 +12,10 @@ export const Home = () => {
       <Header />
       <Hero />
       <Details />
-      <Photos />
+      <Services />
       <About />
+      <Photos />
+      <Footer />
     </>
   );
 };

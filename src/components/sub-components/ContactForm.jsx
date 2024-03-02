@@ -10,10 +10,10 @@ export const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "service_o3dp98i",
-        "template_bqt3owm",
+        "service_7hf96td",
+        "template_ybar4is",
         form.current,
-        "C-mcBd9rkRtbWb99j"
+        "z-BCXAiZQZgluGEgP"
       )
       .then(
         (result) => {
@@ -79,7 +79,7 @@ export const ContactForm = () => {
             type="submit"
             value="Send"
             variant="contained"
-            href="tel:+4074892189"
+            href="tel:+4074337831"
           >
             Call
           </Button>

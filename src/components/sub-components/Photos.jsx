@@ -30,7 +30,7 @@ export const Photos = () => {
 
   return (
     <>
-      <Grid pt={7} px={2} mx={1} ml={2} gap={5} justifyContent="center">
+      <Grid pt={5} px={2} mx={1} ml={2} gap={5} justifyContent="center">
         <Grid
           item
           id="pictures"

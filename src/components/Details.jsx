@@ -85,7 +85,7 @@ export const Details = () => {
               paddingTop: "10px",
             }}
           >
-            One call away we can provide easy consultation
+            One call away we can provide an easy consultation
           </span>{" "}
         </Grid>
       </Grid>
