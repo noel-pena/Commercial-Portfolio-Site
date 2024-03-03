@@ -4,7 +4,10 @@ import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Masonry from "@mui/lab/Masonry";
 
-const heights = [400, 400, 600, 300, 500, 300, 292, 400, 400, 300];
+const heights = [
+  600, 500, 600, 500, 500, 400, 500, 400, 400, 600, 500, 400, 500, 400, 400,
+  400, 400, 400,
+];
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -16,6 +19,16 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export const Photos = () => {
   const imageUrls = [
+    "./img/samples/123_1.JPEG",
+    "./img/samples/123_2.JPEG",
+    "./img/samples/123_3.JPEG",
+    "./img/samples/20220411_180109.jpg",
+    "./img/samples/123_4.JPEG",
+    "./img/samples/123_5.JPEG",
+    "./img/samples/123_6.JPEG",
+    "./img/samples/20220411_180102.jpg",
+    "./img/samples/123_7.JPEG",
+    "./img/samples/123_8.JPEG",
     "./img/samples/resspic1.jpeg",
     "./img/samples/commpic3.jpg",
     "./img/samples/commpic2.jpeg",
@@ -24,8 +37,6 @@ export const Photos = () => {
     "./img/samples/20240124_112503.jpg",
     "./img/samples/20221105_112753.jpg",
     "./img/samples/20220411_180120.jpg",
-    "./img/samples/20220411_180109.jpg",
-    "./img/samples/20220411_180102.jpg",
   ];
 
   return (
