@@ -1,57 +1,52 @@
 /* eslint-disable react/prop-types */
 import { Grid } from "@mui/material";
 
-export const ServiceBox = (props) => {
+export const ReviewBox = (props) => {
   return (
     <Grid
       container
       item
-      p={3}
+      p={5}
       direction={{ xs: "column", sm: "column" }}
-      spacing={{ xs: 1, sm: 2, md: 4 }}
       style={{
-        maxWidth: "300px",
-        height: "300px",
-        color: "white",
+        maxWidth: "400px",
+        height: "400px",
+        color: "gray",
         marginLeft: "3px",
         marginBottom: "15px",
         marginTop: "15px",
       }}
-      className="skill-container"
+      className="review-container"
       alignItems="center"
-      justifyContent="center"
+      justifyContent="space-evenly"
     >
-      <img
-        src={props.svgIcon}
-        style={{
-          paddingBottom: "15px",
-          height: "60px",
-          color: "white",
-          fontWeight: 400,
-          textAlign: "center",
-          lineHeight: 1.5,
-        }}
-      ></img>
+      <img src="./img/svg/stars.svg"></img>
       <span
         style={{
-          fontSize: "20px",
-          fontWeight: 400,
+          fontSize: "18px",
+          fontWeight: 300,
           textAlign: "center",
-          lineHeight: 1.5,
         }}
       >
-        {props.service}
+        {props.review}
+      </span>
+      <span
+        style={{
+          fontSize: "15px",
+          fontWeight: 800,
+          textAlign: "center",
+        }}
+      >
+        {props.name}
       </span>
       <span
         style={{
           fontSize: "15px",
           fontWeight: 300,
           textAlign: "center",
-          lineHeight: 1.5,
-          padding: "10px",
         }}
       >
-        {props.description}
+        {props.date}
       </span>
     </Grid>
   );

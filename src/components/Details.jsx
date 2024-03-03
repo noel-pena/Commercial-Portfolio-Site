@@ -53,7 +53,10 @@ export const Details = () => {
             }}
           >
             Quality is our expertise. View our{" "}
-            <a style={{ color: "rgb(197, 166, 115)" }} href="/gallery">
+            <a
+              style={{ color: "rgb(197, 166, 115)", textDecoration: "none" }}
+              href="/gallery"
+            >
               gallery
             </a>
           </span>

@@ -163,3 +163,16 @@ body {
     font-size: 8px;
   }
 }
+
+.css-138whfb-MuiGrid-root {
+  background-color: #e0e0e0;
+}
+
+.review-container {
+  border-radius: 5px;
+  background: #e0e0e0;
+  box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+  border: rgba(230, 230, 230, 0.669);
+  border-width: 1px;
+  border-style: solid;
+}

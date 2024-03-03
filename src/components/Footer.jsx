@@ -6,7 +6,7 @@ export const Footer = () => {
       <hr
         style={{
           borderColor: "gray",
-          width: "80%",
+          width: "100%",
           marginTop: "25px",
         }}
       />

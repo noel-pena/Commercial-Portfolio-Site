@@ -6,7 +6,6 @@ export const Services = () => {
     <>
       <Grid
         xs={12}
-        lg={12}
         pt={5}
         pb={1}
         flexDirection="column"
@@ -17,7 +16,7 @@ export const Services = () => {
         <span style={{ color: "rgb(103, 131, 110)" }}>Services</span>
         <hr style={{ borderColor: "gray", width: "25%", marginTop: "25px" }} />
       </Grid>
-      <Grid container justifyContent="space-evenly">
+      <Grid container justifyContent="space-evenly" pb={10}>
         <ServiceBox
           svgIcon="./img/svg/floortiles.svg"
           service="Floor Tile Install"
