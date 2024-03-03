@@ -1,3 +1,3 @@
 # React + Vite
 
-A site I developed for a flooring company
+React site for a flooring company
