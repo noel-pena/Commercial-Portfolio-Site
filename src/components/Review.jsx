@@ -11,7 +11,7 @@ export const Review = () => {
         pt={12}
         flexDirection="column"
         alignItems="center"
-        className="details"
+        className="details testimony-page"
       >
         <span style={{ color: "rgb(103, 131, 110)" }}>Testimonies</span>
         <hr style={{ borderColor: "gray", width: "25%", marginTop: "25px" }} />
