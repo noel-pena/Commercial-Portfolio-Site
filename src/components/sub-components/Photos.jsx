@@ -6,7 +6,8 @@ import Masonry from "@mui/lab/Masonry";
 
 const heights = [
   600, 500, 600, 500, 500, 400, 500, 400, 400, 600, 500, 400, 500, 400, 400,
-  400, 400, 400,
+  400, 400, 400, 400, 600, 500, 400, 600, 500, 400, 600, 500, 400, 600, 500,
+  600, 500,
 ];
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -29,6 +30,20 @@ export const Photos = () => {
     "./img/samples/20220411_180102.jpg",
     "./img/samples/123_7.JPEG",
     "./img/samples/123_8.JPEG",
+    "./img/samples/123_9.JPEG",
+    "./img/samples/123_10.JPEG",
+    "./img/samples/123_11.JPEG",
+    "./img/samples/123_12.JPEG",
+    "./img/samples/123_13.JPEG",
+    "./img/samples/123_14.JPEG",
+    "./img/samples/123_15.JPEG",
+    "./img/samples/123_16.JPEG",
+    "./img/samples/123_17.JPEG",
+    "./img/samples/123_18.JPEG",
+    "./img/samples/123_19.JPEG",
+    "./img/samples/123_20.JPEG",
+    "./img/samples/123_21.JPEG",
+    "./img/samples/123_22.JPEG",
     "./img/samples/resspic1.jpeg",
     "./img/samples/commpic3.jpg",
     "./img/samples/commpic2.jpeg",
