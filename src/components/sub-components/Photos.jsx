@@ -5,46 +5,9 @@ import Paper from "@mui/material/Paper";
 import Masonry from "@mui/lab/Masonry";
 
 const heights = [
-  600,
-  500,
-  600,
-  500,
-  500,
-  400,
-  500,
-  400,
-  400,
-  600,
-  500,
-  400,
-  500,
-  400,
-  400,
-  400,
-  400,
-  400,
-  400,
-  600,
-  500,
-  400,
-  600,
-  500,
-  400,
-  600,
-  500,
-  400,
-  600,
-  500, //32
-  600,
-  500,
-  400,
-  400,
-  600,
-  500,
-  400,
-  600,
-  400,
-  500,
+  600, 500, 600, 500, 500, 400, 500, 400, 400, 600, 500, 400, 500, 400, 400,
+  400, 400, 400, 400, 600, 500, 400, 600, 500, 400, 600, 500, 400, 600, 500,
+  600, 500, 400, 400, 600, 500, 400, 600, 400, 500,
 ];
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -56,10 +19,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export const Photos = () => {
-  const imageUrls = [
-    "./img/samples/backsplash1.jpg", //40
-    "./img/samples/backsplash2.jpg",
-    "./img/samples/backsplash3.jpg",
+  const bathroomPhotos = [
     "./img/samples/bathroom1.jpeg",
     "./img/samples/bathroom2.jpeg",
     "./img/samples/bathroom3.jpg",
@@ -78,6 +38,8 @@ export const Photos = () => {
     "./img/samples/bathroom16.JPEG",
     "./img/samples/bathroom17.JPEG",
     "./img/samples/bathroom18.JPEG",
+  ];
+  const floorPhotos = [
     "./img/samples/floor1.JPEG",
     "./img/samples/floor2.JPEG",
     "./img/samples/floor3.jpg",
@@ -92,6 +54,14 @@ export const Photos = () => {
     "./img/samples/floor12.JPEG",
     "./img/samples/floor13.JPEG",
     "./img/samples/floor14.JPEG",
+    "./img/samples/floor15.JPEG",
+    "./img/samples/floor16.JPEG",
+    "./img/samples/floor17.JPEG",
+  ];
+  const miscPhotos = [
+    "./img/samples/backsplash1.jpg",
+    "./img/samples/backsplash2.jpg",
+    "./img/samples/backsplash3.jpg",
     "./img/samples/misc1.JPEG",
     "./img/samples/misc2.jpg",
     "./img/samples/misc3.JPEG",
