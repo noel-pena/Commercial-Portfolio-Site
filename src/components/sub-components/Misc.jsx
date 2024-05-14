@@ -1,14 +1,11 @@
+/* eslint-disable react/prop-types */
 import { Grid } from "@mui/material";
 import Box from "@mui/material/Box";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Masonry from "@mui/lab/Masonry";
 
-const heights = [
-  600, 500, 600, 500, 500, 400, 500, 400, 400, 600, 500, 400, 500, 400, 400,
-  400, 400, 400, 400, 600, 500, 400, 600, 500, 400, 600, 500, 400, 600, 500,
-  600, 500, 400, 400, 600, 500, 400, 600, 400, 500,
-];
+const heights = [600, 500, 600, 500, 500, 400, 500, 400];
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -18,46 +15,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-export const Photos = () => {
-  const bathroomPhotos = [
-    "./img/samples/bathroom1.jpeg",
-    "./img/samples/bathroom2.jpeg",
-    "./img/samples/bathroom3.jpg",
-    "./img/samples/bathroom4.jpg",
-    "./img/samples/bathroom5.JPEG",
-    "./img/samples/bathroom6.JPEG",
-    "./img/samples/bathroom7.JPEG",
-    "./img/samples/bathroom8.JPEG",
-    "./img/samples/bathroom9.JPEG",
-    "./img/samples/bathroom10.JPEG",
-    "./img/samples/bathroom11.JPEG",
-    "./img/samples/bathroom12.JPEG",
-    "./img/samples/bathroom13.JPEG",
-    "./img/samples/bathroom14.JPEG",
-    "./img/samples/bathroom15.JPEG",
-    "./img/samples/bathroom16.JPEG",
-    "./img/samples/bathroom17.JPEG",
-    "./img/samples/bathroom18.JPEG",
-  ];
-  const floorPhotos = [
-    "./img/samples/floor1.JPEG",
-    "./img/samples/floor2.JPEG",
-    "./img/samples/floor3.jpg",
-    "./img/samples/floor4.JPEG",
-    "./img/samples/floor5.JPEG",
-    "./img/samples/floor6.JPEG",
-    "./img/samples/floor7.JPEG",
-    "./img/samples/floor8.JPEG",
-    "./img/samples/floor9.JPEG",
-    "./img/samples/floor10.JPEG",
-    "./img/samples/floor11.JPEG",
-    "./img/samples/floor12.JPEG",
-    "./img/samples/floor13.JPEG",
-    "./img/samples/floor14.JPEG",
-    "./img/samples/floor15.JPEG",
-    "./img/samples/floor16.JPEG",
-    "./img/samples/floor17.JPEG",
-  ];
+export const Misc = ({ title }) => {
   const miscPhotos = [
     "./img/samples/backsplash1.jpg",
     "./img/samples/backsplash2.jpg",
@@ -71,7 +29,7 @@ export const Photos = () => {
 
   return (
     <>
-      <Grid pt={5} px={2} mx={1} ml={2} gap={5} justifyContent="center">
+      <Grid pt={0} px={2} mx={1} ml={2} gap={5} justifyContent="center">
         <Grid
           item
           id="pictures"
@@ -87,14 +45,14 @@ export const Photos = () => {
             lineHeight: 1.5,
           }}
         >
-          <span style={{ color: "rgb(103, 131, 110)" }}>Gallery</span>
+          <span style={{ color: "rgb(103, 131, 110)" }}>{title}</span>
           <hr
             style={{ borderColor: "gray", width: "25%", marginTop: "25px" }}
           />
         </Grid>
         <Box pt={4} sx={{ width: "auto", minHeight: 500 }}>
           <Masonry columns={{ xs: 1, sm: 2, md: 3 }}>
-            {imageUrls.map((imageUrl, index) => (
+            {miscPhotos.map((imageUrl, index) => (
               <Item
                 key={index}
                 sx={{

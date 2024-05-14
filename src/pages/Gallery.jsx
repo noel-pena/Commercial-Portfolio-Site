@@ -1,4 +1,4 @@
-import { Photos } from "../components/sub-components/Photos";
+import { Photos } from "../components/Photos";
 import { Footer } from "../components/Footer";
 import AppBar from "@mui/material/AppBar";
 import Container from "@mui/material/Container";
