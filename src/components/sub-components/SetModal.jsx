@@ -17,9 +17,6 @@ const style = {
 
 export const SetModal = () => {
   const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
   return (
     <>
       <button
@@ -28,13 +25,13 @@ export const SetModal = () => {
           color: "rgb(103, 131, 110)",
           backgroundColor: "white",
         }}
-        onClick={handleOpen}
+        onClick={() => setOpen(true)}
       >
         Contact Us
       </button>
       <Modal
         open={open}
-        onClose={handleClose}
+        onClose={() => setOpen(false)}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
