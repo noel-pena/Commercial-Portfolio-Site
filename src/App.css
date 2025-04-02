@@ -111,11 +111,12 @@ body {
 }
 
 .about {
-  font-weight: 400;
-  font-size: 24px;
+  font-weight: 200;
+  font-size: 1.25rem;
   line-height: 1.5;
   padding-top: 20px;
   padding-bottom: 50px;
+  text-align: start;
 }
 
 @media (max-width: 500px) {
